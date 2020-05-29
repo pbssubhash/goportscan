@@ -4,6 +4,7 @@ import(
 	"flag"
 	"fmt"
 	"github.com/pbssubhash/goportscan/pkg"
+	PortScan "go-portscan/pkg"
 )
 
 func main() {
@@ -13,7 +14,7 @@ func main() {
 	if *verbose {
 		fmt.Println("[+] Verbose Mode enabled. [+]")
 	}
-	scanTop('192.168.1.1')
+	PortScan.scanTop('192.168.1.1')
 }
 
 func printVersionAndDefaults(){

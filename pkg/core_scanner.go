@@ -1,7 +1,6 @@
 package PortScan
 
 import (
-	"fmt"
 	"net"
 	"strconv"
 )
@@ -24,7 +23,6 @@ func scanTop(ip string) []result {
 	go func() {
 		for i := 1; i <= 1024; i++ {
 			results := scan(ip, strconv.Itoa(i), "tcp")
-			fmt.Printf("%v \n", results)
 			ch <- results
 			finalres = append(finalres, results)
 		}
