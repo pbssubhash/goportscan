@@ -6,13 +6,14 @@ import(
 	"github.com/pbssubhash/goportscan/pkg"
 )
 
-func main(){
-	verbose := flag.Bool("v", false,"Enable Verbose Output" )
+func main() {
+	verbose := flag.Bool("v", false, "Enable Verbose Output")
 	flag.Parse()
 	printVersionAndDefaults()
 	if *verbose {
 		fmt.Println("[+] Verbose Mode enabled. [+]")
 	}
+	scanTop('192.168.1.1')
 }
 
 func printVersionAndDefaults(){

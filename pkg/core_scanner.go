@@ -1,4 +1,4 @@
-package main
+package PortScan
 
 import (
 	"fmt"
@@ -39,9 +39,9 @@ func scanTop(ip string) []result {
 	return finalres
 }
 
-func main(){
-	fmt.Println(scanTop("192.168.1.1"))
-}
+//func main(){
+//	fmt.Println(scanTop("192.168.1.1"))
+//}
 //func scanAll(ip string){
 //
 //}
